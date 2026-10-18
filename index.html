@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#641f31">
+  <meta name="description" content="Một món quà nhỏ dành riêng cho Tini từ Miqi.">
+  <title>Gửi Tini, từ Miqi ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal-layer" aria-hidden="true" id="petals"></div>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Bật hoặc tắt nhạc" title="Bật/tắt nhạc">
+    <span class="music-icon">♫</span><span id="musicLabel">Bật nhạc</span>
+  </button>
+  <audio id="bgMusic" preload="auto" loop>
+    <source src="./assets/music/nhac-nen.mp3" type="audio/mpeg">
+  </audio>
+  <a class="youtube-fallback" href="https://www.youtube.com/watch?v=MtDik4dz3IA" target="_blank" rel="noopener noreferrer">Mở bài hát trên YouTube ↗</a>
+
+  <main>
+    <section class="screen hero active" id="welcome">
+      <div class="eyebrow">A LITTLE GIFT FOR YOU</div>
+      <div class="hero-flower flower-one">✿</div>
+      <div class="gift-wrap" id="gift" role="button" tabindex="0" aria-label="Mở hộp quà">
+        <div class="gift-glow"></div>
+        <div class="gift-lid"><span class="bow bow-left"></span><span class="bow bow-right"></span><span class="bow-knot"></span></div>
+        <div class="gift-box"><span class="ribbon-vertical"></span><span class="ribbon-horizontal"></span><span class="heart-on-box">♡</span></div>
+        <div class="gift-shadow"></div>
+      </div>
+      <p class="hero-kicker">Gửi em, Tini yêu dấu</p>
+      <h1>Một món quà nhỏ<br><em>từ Miqi</em></h1>
+      <p class="hero-copy">Có vài điều anh muốn nói với em.<br>Em mở quà nha, nhoooo ♡</p>
+      <button class="primary-button" id="openGift">Mở món quà <span>↗</span></button>
+      <div class="scroll-note">MADE WITH LOVE · 20.10</div>
+    </section>
+
+    <section class="screen letter-screen" id="letterScreen" aria-hidden="true">
+      <div class="section-mark">01 — A LETTER FOR YOU</div>
+      <div class="letter-card">
+        <div class="letter-top"><span>♡</span><span>20 · 10</span><span>♡</span></div>
+        <p class="letter-to">Gửi Tini của Miqi,</p>
+        <div class="letter-body" id="letterBody"></div>
+        <div class="letter-sign">Thương em thật nhiều,<br><strong>Miqi ♡</strong></div>
+        <div class="letter-stamp">FOR<br>MY TINI</div>
+      </div>
+      <button class="primary-button next-button" id="toMemories">Đi xem kỷ niệm của tụi mình <span>♡</span></button>
+    </section>
+
+    <section class="screen memories-screen" id="memoriesScreen" aria-hidden="true">
+      <div class="section-mark">02 — OUR LITTLE UNIVERSE</div>
+      <p class="small-script">every little moment matters</p>
+      <h2>45 tháng <em>có nhau</em></h2>
+      <p class="memory-intro">Từ những ngày còn ngại ngùng đến những cái nắm tay thật chặt.<br>Những khoảnh khắc nhỏ xíu này đều trở thành điều quý giá với anh.</p>
+      <div class="photo-grid" id="photoGrid"></div>
+      <div class="promise-card">
+        <div class="promise-heart">♡</div>
+        <p class="promise-label">A LITTLE PROMISE</p>
+        <h3>Chúc em luôn được<br><em>yêu thương dịu dàng</em></h3>
+        <p class="promise-text">Mong Tini sẽ luôn có thật nhiều niềm vui, luôn tin vào bản thân và gặp được những điều tốt đẹp. Còn Miqi sẽ cố gắng yêu em bằng sự chân thành, lắng nghe em nhiều hơn và cùng em tạo thêm thật nhiều kỷ niệm đáng nhớ.</p>
+        <p class="promise-last">Happy 45 months & Happy 20/10, Tini.<br><strong>Anh thương em, hôm nay và cả những ngày sau nữa.</strong></p>
+        <div class="signature">Miqi <span>♡</span></div>
+      </div>
+      <button class="restart-button" id="restart">Xem lại món quà từ đầu ↺</button>
+      <footer>MADE FOR TINI, WITH LOVE FROM MIQI</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
